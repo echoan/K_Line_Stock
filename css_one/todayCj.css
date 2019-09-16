@@ -1,0 +1,94 @@
+html,body{
+	height:100%;
+	overflow:hidden;
+/*	background-color:#121212;*/
+	font-family: PingFangSC-Regular;
+}
+/*当日成交头部*/
+#todayCjheader{
+	width:100%;
+	height:1.706667rem;
+	overflow:hidden;
+}
+#todayCjheader p{
+	margin-top:0.786667rem;
+	font-size:0.48rem;
+	color:#333333;
+	text-align:center;
+	position:relative;
+}
+#todayCjheader p span{
+	position: absolute;
+	font-size:0.733333rem;
+	left:0.426667rem;
+}
+#todaylistcj{
+	width:100%;
+	height:0.68rem;
+	line-height:0.68rem;
+	background-color:#FAFAFA;
+	/*display:flex;*/
+}
+#todaylistcj p{
+	width:9.2rem;
+	margin-left: 0.4rem;
+	display:flex;
+}
+#todaylistcj p span{
+	flex:1;
+	text-align:right;
+	font-size:0.346667rem;
+	color:#999999;
+	border-top:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+}
+#todaystocklistcj{
+	width:100%;
+	height:85%;
+	/*background-color:pink;*/
+	overflow-y:scroll;
+}
+#todaystocklistcj ul{
+	width:9.2rem;
+	margin-left: 0.4rem;
+}
+#todaystocklistcj ul li{
+	width:100%;
+	height:1.466667rem;
+	/*background-color:green;*/
+	display:flex;
+	border-bottom:1px solid lightgray;
+}
+#todaystocklistcj ul li p{
+	flex:1;
+	text-align:right;
+	margin-top:0.213333rem;
+}
+#todaystocklistcj ul li p:nth-child(1), #todaylistcj p span:nth-child(1){
+	text-align:left;
+}
+#todaystocklistcj ul li p span:nth-child(1){
+    font-size:0.453333rem;
+    color:#666666;
+}
+#todaystocklistcj ul li p span:nth-child(3){
+    font-size:0.346667rem;
+    color:#999999;
+}
+#todaystocklistcj ul li p:nth-child(3){
+	margin-top:0;
+	font-size:0.426667rem;
+	line-height:1.466667rem;
+	color:#666666;
+}
+#todaystocklistcj ul li p:nth-child(2) span:nth-child(2){
+	font-size:0.346667rem;
+	color:#666666;
+	display:block;
+}
+#todaystocklistcj ul li p:nth-child(4){
+	margin-top:0;
+	font-size:0.426667rem;
+	line-height:1.466667rem;
+	color:#666666;
+}

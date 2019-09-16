@@ -1,0 +1,117 @@
+html,body{
+	height:100%;
+	overflow:hidden;
+}
+body{
+	/*background:url(../images/login/loginBg.png) no-repeat;
+	background-size:100% 100%;*/
+}
+#login{
+	width:100%;
+	height:100%;
+}
+#logoBox{
+	width:100%;
+	text-align:center;
+	margin-top: 3.04rem;
+}
+
+#formBox{
+	text-align:center;
+	margin-top:0.96rem;
+}
+#formBox div{
+	position: relative;
+	display:inline-block;
+}
+#msgBox{
+	text-align:center;
+	margin-top:0.96rem;
+}
+#userName,input.paswd,input.pasMsg{
+	width:7.866667rem;
+	height:1.173333rem;
+	float:none;
+	border:none;
+	outline:none;
+	color:#848B93;
+	text-indent:1rem;
+	margin-bottom: 0.533333rem;
+	font-size:0.48rem;
+	border-bottom: 1px solid #ebd7d7;
+}
+input.pasMsg{
+	margin-bottom:0.0rem ! important;
+}
+#userNamespan{
+	display: inline-block;
+	width:0.573333rem;
+	height:0.573333rem;
+	float:none;
+	padding:0;
+	background: url(../images/denglu/username.png) no-repeat center center;
+	background-size:100% 100%;
+	position: absolute;
+	top:0.306667rem;
+	left:0;
+}
+#userpsd{
+	display: inline-block;
+	width:0.573333rem;
+	height:0.573333rem;
+	float:none;
+	padding:0;
+	background: url(../images/denglu/userpwd.png) no-repeat center center;
+	background-size:100% 100%;
+	position: absolute;
+	top:0.306667rem;
+	left:0;
+}
+#pasMsg{
+	display: inline-block;
+	width:0.573333rem;
+	height:0.573333rem;
+	float:none;
+	padding:0;
+	background: url(../images/denglu/usermsg.png) no-repeat center center;
+	background-size:100% 100%;
+	position: absolute;
+	top:0.306667rem;
+	left:0;
+}
+#pasMsgone,#pasMsgone2{
+	display:block;
+	float:none;
+	padding:0;
+	background-size:100% 100%;
+	position: absolute;
+	top:0.306667rem;
+	left:4.746667rem;
+	border-left: 1px solid #B2B4BA;
+	color:#FA4A52;
+	text-align: center;
+	text-indent:0.453333rem;
+	font-size:0.4rem;
+}
+#pasMsgone2{
+	left:6rem;
+}
+#logInBtnBox{
+	margin-top: 1.2rem;
+}
+#logInBtn{
+	width:7.866667rem;
+	height:1.173333rem;
+	outline:none;
+	border:none;
+	border-radius:1.333333rem;
+	color: #fff;
+	font-size:0.453333rem;
+	background-image: linear-gradient(90deg, #F77756 1%, #FA4751 100%);
+    border-radius:1.333333rem;
+    letter-spacing:5px;
+}
+
+
+
+

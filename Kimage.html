@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css_one/zxStock.css">
+	</head>
+	<body>
+		<div id="lineImgBox" style="height:100%;">
+    		<div id = 'lineImgOne' class="divLine" style="display:none;">
+    			<div id="line_app">
+    				
+    			</div>
+    		</div>
+    		<div id = 'lineImgTwo' class="divLine" style="height:400px;">
+    			<div id="day_app" style="height:400px;">
+    				
+    			</div>
+    		</div>
+    		<div id = 'lineImgThree' class="divLine" style="display:none;">
+    			<div id="week_app">
+    				
+    			</div>
+    		</div>
+    		<div id = 'lineImgFour' class="divLine" style="display:none;">
+    			<div id="month_app">
+    				
+    			</div>
+    		</div>
+    	</div>
+	</body>
+	<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+	<script src="build/flexible_css.js"></script>
+	<script src="build/flexible.debug.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/echarts.js"></script>
+	<script type="text/javascript" src="js/package/setting.js"></script>
+	<script type="text/javascript" src="js/package/line.js"></script>
+	<script type="text/javascript" src="js/package/stock.js"></script>
+	<script type="text/javascript">
+		var daykMyChart;
+		daykMyChart = echarts.init(document.getElementById('day_app'));
+		init_stock(daykMyChart,"day-k");
+	</script>
+	<script>if (window.module) module = window.module;</script>
+</html>

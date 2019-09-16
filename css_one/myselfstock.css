@@ -1,0 +1,10 @@
+html,body{
+	height:100%;
+	overflow: hidden;
+}
+#choosemy{
+	width:0.506667rem !important;
+	height:0.506667rem !important;
+	background:url(../images/nav/choosemy.png) no-repeat;
+	background-size:100% 100%;
+}

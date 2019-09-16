@@ -1,0 +1,167 @@
+html,body{
+	height:100%;
+	overflow:hidden;
+/*	background-color:#121212;*/
+	font-family: PingFangSC-Regular;
+}
+/*当日成交头部*/
+#historyWtheader{
+	width:100%;
+	height:1.706667rem;
+	overflow:hidden;
+}
+#historyWtheader p{
+	margin-top:0.786667rem;
+	font-size:0.48rem;
+	color:#333333;
+	text-align:center;
+	position:relative;
+}
+#historyWtheader p span{
+	position: absolute;
+	font-size:0.733333rem;
+	left:0.426667rem;
+}
+#historylistwt{
+	width:100%;
+	height:0.68rem;
+	line-height:0.68rem;
+	background-color:#FAFAFA;
+	/*display:flex;*/
+}
+#historylistwt p{
+	width:9.2rem;
+	margin-left: 0.4rem;
+	display:flex;
+}
+#historylistwt p span{
+	flex:1;
+	text-align:right;
+	font-size:0.346667rem;
+	color:#999999;
+	border-top:1px solid #EEEEEE;
+	border-bottom:1px solid #EEEEEE;
+}
+/*#historylistwt span:nth-child(1), #historystocklistwt ul li p span:nth-child(1){
+	text-align: left;
+}*/
+#historystocklistwt{
+	width:100%;
+	height:75%;
+	/*background-color:pink;*/
+	overflow-y:scroll;
+	padding-bottom:2rem;
+}
+#historystocklistwt ul{
+	width:9.2rem;
+	margin-left: 0.4rem;
+}
+#historystocklistwt ul li{
+	width:100%;
+	height:1.466667rem;
+	/*background-color:green;*/
+	display:flex;
+	border-bottom:1px solid lightgray;
+}
+#historystocklistwt ul li p{
+	flex:1;
+	text-align:right;
+	margin-top:0.213333rem;
+}
+#historystocklistwt ul li p:nth-child(1),  #historylistwt p span:nth-child(1){
+	text-align:left;
+}
+#historystocklistwt ul li p span:nth-child(1){
+    font-size:0.453333rem;
+    color:#666666;
+}
+#historystocklistwt ul li p span:nth-child(3){
+    font-size:0.346667rem;
+    color:#999999;
+}
+#historystocklistwt ul li p:nth-child(2){
+	margin-top:0;
+	font-size:0.426667rem;
+	line-height:1.466667rem;
+	color:#666666;
+}
+#historystocklistwt ul li p:nth-child(3) span:nth-child(2){
+	font-size:0.346667rem;
+	color:#666666;
+	display:block;
+}
+#historystocklistwt ul li p:nth-child(4) span:nth-child(1){
+	font-size:0.426667rem;
+	color:#666666;
+}
+#historystocklistwt ul li p:nth-child(4) span:nth-child(2){
+	display:block;
+}
+#timechooseBox{
+	width:100%;
+	height:3.333333rem;
+	border-top:1px solid lightgray;
+}
+#datapickBox{
+    height:2.16rem;
+  /*  background-color:green;*/
+}
+#datapickBox ul{
+	display:flex;
+}
+#datapickBox li{
+	flex:1;
+	flex-grow:3;
+	text-align:center;
+}
+#datapickBox li:nth-child(2){
+	flex-grow:1;
+	line-height: 2.16rem;
+	font-size:0.533333rem;
+	color:#F94A51;
+}
+#datapickBox li:nth-child(4){
+	line-height: 2.16rem;
+}
+#datapickBox ul li span{
+	font-size:0.346667rem;
+	color:#666666;
+	display:inline-block;
+	margin-top:0.426667rem;
+}
+#datapickBox ul li p{
+	font-size:0.426667rem;
+	color:#333333;
+	margin-top:0.2rem;
+}
+#datapickBox ul li label{
+	display:inline-block;
+	width:1.866667rem;
+	height:0.8rem;
+	line-height:0.8rem;
+	background-image: linear-gradient(90deg, #F77756 1%, #FA4751 100%);
+    border-radius: 8px;
+    font-size:0.373333rem;
+    color:#fff;
+}
+#timeArea{
+	width:100%;
+	text-align: center;
+}
+#timeArea span{
+   font-size:0.373333rem;
+   color:#333333;
+   margin-right:0.84rem;
+   background: #FAFAFA;
+   padding:4px 10px;
+}
+#timeArea span.timespanactive{
+   color:#F94A51;
+   border: 1px solid #F94A51;
+   border-radius: 8px;
+}
+#datethree,#datefour{
+	padding:0;
+	line-height:inherit;
+	border:none;
+}
