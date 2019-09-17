@@ -108,40 +108,6 @@ function calculateMA(dayCount) {
 }
 
 var option = {
-	/*   tooltip: {
-            trigger: 'axis',
-            axisPointer: {
-               type: 'shadow',
-	            label: {show: false},
-	            triggerTooltip: true,
-	            handle: {
-	                show: true,
-	                margin: 30,
-	                color: '#B80C00'
-	            }
-            },
-        },
-        axisPointer: {
-            link: {xAxisIndex: 'all'},
-        },*/
-//      toolbox: {
-//          feature: {
-//              dataZoom: {
-//                  yAxisIndex: false,
-//     
-//              },
-//              brush: {
-//                  type: ['lineX', 'clear']
-//              }
-//          }
-//      },
-//      brush: {
-//          xAxisIndex: 'all',
-//          brushLink: 'all',
-//          outOfBrush: {
-//              colorAlpha: 0.1
-//          }
-//      },
 	  grid: [           {
 	      left: '5%',
 	      right: '3%',

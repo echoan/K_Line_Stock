@@ -8,23 +8,23 @@
 	</head>
 	<body>
 		<div id="lineImgBox" style="height:100%;">
-    		<div id = 'lineImgOne' class="divLine" style="display:none;">
-    			<div id="line_app">
+    		<div id = 'lineImgOne' class="divLine" style="height:400px;">
+    			<div id="line_app" style="height:400px;">
     				
     			</div>
     		</div>
-    		<div id = 'lineImgTwo' class="divLine" style="height:400px;">
+    		<div id = 'lineImgTwo' class="divLine" style="height:400px;display:none;">
     			<div id="day_app" style="height:400px;">
     				
     			</div>
     		</div>
-    		<div id = 'lineImgThree' class="divLine" style="display:none;">
-    			<div id="week_app">
+    		<div id = 'lineImgThree' class="divLine" style="height:400px;display:none;">
+    			<div id="week_app" style="height:400px;">
     				
     			</div>
     		</div>
-    		<div id = 'lineImgFour' class="divLine" style="display:none;">
-    			<div id="month_app">
+    		<div id = 'lineImgFour' class="divLine" style="height:400px;display:none;">
+    			<div id="month_app" style="height:400px;">
     				
     			</div>
     		</div>
@@ -36,12 +36,44 @@
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/echarts.js"></script>
 	<script type="text/javascript" src="js/package/setting.js"></script>
+	<script type="text/javascript" src="js/package/common.js"></script>
 	<script type="text/javascript" src="js/package/line.js"></script>
 	<script type="text/javascript" src="js/package/stock.js"></script>
 	<script type="text/javascript">
-		var daykMyChart;
-		daykMyChart = echarts.init(document.getElementById('day_app'));
-		init_stock(daykMyChart,"day-k");
+		
+		//日K
+		
+//		var daykMyChart;
+//		daykMyChart = echarts.init(document.getElementById('day_app'));
+//		init_stock(daykMyChart,"day-k"); 
+
+       //周K
+//     var weekkMyChart;
+//     weekkMyChart = echarts.init(document.getElementById('week_app'));
+//     init_stock(weekkMyChart,"week-k");
+       
+       //月K
+//     var monthkMyChart;
+//     monthkMyChart = echarts.init(document.getElementById('month_app'));
+//     init_stock(monthkMyChart,"month-k");
+
+
+
+		//分时线
+		var lineMyChart;
+		lineMyChart = echarts.init(document.getElementById('line_app'));
+		sessionStorage.setItem("Stock_Code","sh000001")
+		init_line1_load(sessionStorage.getItem('Stock_Code'));
+		
+		var hours=new Date().getHours();
+		var minute=new Date().getMinutes();
+		interval_stock_app = setInterval(function () {
+					hours=new Date().getHours();
+					minute=new Date().getMinutes();
+					if(!((hours<9) || (hours==9 && minute<0) ||(hours==11 && minute> 35) || (hours>11 && hours<13) || (hours==15 && minute>35) || (hours>15))){
+						init_line1_load(sessionStorage.getItem('Stock_Code'));
+					}
+		}, 5000);
 	</script>
 	<script>if (window.module) module = window.module;</script>
 </html>
