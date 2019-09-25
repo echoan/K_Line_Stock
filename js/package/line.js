@@ -88,7 +88,6 @@ function init_line1_load(code){
                 }
            });
 }
-
 function load_line(myChart,rowDate){
 	var data =splitData_line(rowDate);
 	var length_line = data.times.length;

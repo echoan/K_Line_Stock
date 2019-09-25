@@ -8,11 +8,18 @@
 	</head>
 	<body>
 		<div id="lineImgBox" style="height:100%;">
-    		<div id = 'lineImgOne' class="divLine" style="height:400px;">
+    		<div id = 'lineImgOne' class="divLine" style="height:400px;display:none;">
     			<div id="line_app" style="height:400px;">
     				
     			</div>
     		</div>
+    		
+    		<div id = 'lineImgFive' class="divLine" style="height:400px;display:block;">
+    			<div id="day_app_add" style="height:400px;">
+    				
+    			</div>
+    		</div>
+    		
     		<div id = 'lineImgTwo' class="divLine" style="height:400px;display:none;">
     			<div id="day_app" style="height:400px;">
     				
@@ -34,18 +41,24 @@
 	<script src="build/flexible_css.js"></script>
 	<script src="build/flexible.debug.js"></script>
 	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/echarts.js"></script>
+	<script type="text/javascript" src="js/package/echarts.js"></script>
 	<script type="text/javascript" src="js/package/setting.js"></script>
 	<script type="text/javascript" src="js/package/common.js"></script>
 	<script type="text/javascript" src="js/package/line.js"></script>
-	<script type="text/javascript" src="js/package/stock.js"></script>
+	<script type="text/javascript" src="js/package/stock_one.js"></script>
 	<script type="text/javascript">
+		
+		//标识线
+		var stockMyChart;
+		stockMyChart = echarts.init(document.getElementById('day_app_add'));
+		init_stock(stockMyChart,"stock-k");
 		
 		//日K
 		
 //		var daykMyChart;
 //		daykMyChart = echarts.init(document.getElementById('day_app'));
 //		init_stock(daykMyChart,"day-k"); 
+
 
        //周K
 //     var weekkMyChart;
@@ -60,20 +73,20 @@
 
 
 		//分时线
-		var lineMyChart;
-		lineMyChart = echarts.init(document.getElementById('line_app'));
-		sessionStorage.setItem("Stock_Code","sh000001")
-		init_line1_load(sessionStorage.getItem('Stock_Code'));
-		
-		var hours=new Date().getHours();
-		var minute=new Date().getMinutes();
-		interval_stock_app = setInterval(function () {
-					hours=new Date().getHours();
-					minute=new Date().getMinutes();
-					if(!((hours<9) || (hours==9 && minute<0) ||(hours==11 && minute> 35) || (hours>11 && hours<13) || (hours==15 && minute>35) || (hours>15))){
-						init_line1_load(sessionStorage.getItem('Stock_Code'));
-					}
-		}, 5000);
+//		var lineMyChart;
+//		lineMyChart = echarts.init(document.getElementById('line_app'));
+//		sessionStorage.setItem("Stock_Code","sh000001")
+//		init_line1_load(sessionStorage.getItem('Stock_Code'));
+//		
+//		var hours=new Date().getHours();
+//		var minute=new Date().getMinutes();
+//		interval_stock_app = setInterval(function () {
+//					hours=new Date().getHours();
+//					minute=new Date().getMinutes();
+//					if(!((hours<9) || (hours==9 && minute<0) ||(hours==11 && minute> 35) || (hours>11 && hours<13) || (hours==15 && minute>35) || (hours>15))){
+//						init_line1_load(sessionStorage.getItem('Stock_Code'));
+//					}
+//		}, 5000);
 	</script>
 	<script>if (window.module) module = window.module;</script>
 </html>
